@@ -114,7 +114,7 @@ html, body {
 .flores-parte1 {
     position: absolute;
     top: 0%;  /* Ajusta la posición vertical */
-    right: 190px; /* Mueve la imagen fuera del borde derecho */
+    right: 60%; /* Mueve la imagen fuera del borde derecho */
     transform: rotate(195deg); /* Rota la imagen 90° */
     width: 150px; /* Ajusta el tamaño */
     height: auto;
@@ -125,7 +125,7 @@ html, body {
 .flores-parte1-5 {
     position: absolute;
     top: 85%;  /* Ajusta la posición vertical */
-    right: -12px; /* Mueve la imagen fuera del borde derecho */
+    right: -5%; /* Mueve la imagen fuera del borde derecho */
     width: 150px; /* Ajusta el tamaño */
     transform: rotate(20deg); /* Rota la imagen 90° */
     height: auto;
@@ -136,7 +136,7 @@ html, body {
 .flores-parte3 {
     position: absolute;
     top: -10%;  /* Ajusta la posición vertical */
-    right: 205px; /* Mueve la imagen fuera del borde derecho */
+    right: 65%; /* Mueve la imagen fuera del borde derecho */
     width: 150px; /* Ajusta el tamaño */
     transform: rotate(0deg); /* Rota la imagen 90° */
     height: auto;
@@ -147,7 +147,7 @@ html, body {
 .flores-parte4 {
     position: absolute;
     top: -34%;  /* Ajusta la posición vertical */
-    right: 10px; /* Mueve la imagen fuera del borde derecho */
+    right: 3%; /* Mueve la imagen fuera del borde derecho */
     width: auto; /* Ajusta el tamaño */
     transform: rotate(90deg); /* Rota la imagen 90° */
     height: 300px;
@@ -158,7 +158,7 @@ html, body {
 .flores-versiculo{
     position: absolute;
     top: 50%;  /* Ajusta la posición vertical */
-    right: -30px; /* Mueve la imagen fuera del borde derecho */
+    right: -10%; /* Mueve la imagen fuera del borde derecho */
     transform: rotate(30deg); /* Rota la imagen 90° */
     width: 150px; /* Ajusta el tamaño */
     height: auto;
