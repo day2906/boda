@@ -29,7 +29,7 @@ html, body {
 /* Asegurarse de que la vista se ajuste correctamente en dispositivos móviles */
 @media (max-width: 600px) {
     html, body {
-        padding: 0 10px !important; /* Reducir el padding para móviles */
+        padding: 10px !important; /* Reducir el padding para móviles */
         overflow-x: hidden !important;
     }
 
@@ -46,7 +46,7 @@ html, body {
         font-family: 'Averia Serif Libre', serif !important;
         font-size: 20px !important;
         text-align: center !important;
-        margin-top: 15px !important;
+        margin: 0 !important;
         color: #444413 !important;
     }
 
@@ -101,14 +101,75 @@ html, body {
     font-family: 'Averia Serif Libre', serif;
     font-size: 2vw;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
     color: #444413;
 }
 
+/* Contenedor de la parte 1 con la imagen */
+.parte1-container {
+    position: relative; /* Permite posicionar la imagen dentro del cuadro */
+}
+
+/* Imagen de flores en la parte 1 (lado derecho, rotada 90°) */
+.flores-parte1 {
+    position: absolute;
+    top: 0%;  /* Ajusta la posición vertical */
+    right: 190px; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(195deg); /* Rota la imagen 90° */
+    width: 150px; /* Ajusta el tamaño */
+    height: auto;
+    opacity: 0.8; /* Ligera transparencia */
+    z-index: 1;
+}
+
+.flores-parte1-5 {
+    position: absolute;
+    top: 85%;  /* Ajusta la posición vertical */
+    right: -12px; /* Mueve la imagen fuera del borde derecho */
+    width: 150px; /* Ajusta el tamaño */
+    transform: rotate(20deg); /* Rota la imagen 90° */
+    height: auto;
+    opacity: 0.8; /* Ligera transparencia */
+    z-index: 1;
+}
+
+.flores-parte3 {
+    position: absolute;
+    top: -10%;  /* Ajusta la posición vertical */
+    right: 205px; /* Mueve la imagen fuera del borde derecho */
+    width: 150px; /* Ajusta el tamaño */
+    transform: rotate(0deg); /* Rota la imagen 90° */
+    height: auto;
+    opacity: 0.8; /* Ligera transparencia */
+    z-index: 1;
+}
+
+.flores-parte4 {
+    position: absolute;
+    top: -34%;  /* Ajusta la posición vertical */
+    right: 10px; /* Mueve la imagen fuera del borde derecho */
+    width: auto; /* Ajusta el tamaño */
+    transform: rotate(90deg); /* Rota la imagen 90° */
+    height: 300px;
+    opacity: 0.8; /* Ligera transparencia */
+    z-index: 1;
+}
+
+.flores-versiculo{
+    position: absolute;
+    top: 50%;  /* Ajusta la posición vertical */
+    right: -30px; /* Mueve la imagen fuera del borde derecho */
+    transform: rotate(30deg); /* Rota la imagen 90° */
+    width: 150px; /* Ajusta el tamaño */
+    height: auto;
+    opacity: 0.8; /* Ligera transparencia */
+    z-index: 1;
+}
+
+
 /* Imagen */
 img {
-    margin-top: 20px; /* Espacio entre el texto y la imagen */
-    max-width: 96%; /* La imagen se ajusta al tamaño del contenedor */
+    max-width: 100%; /* La imagen se ajusta al tamaño del contenedor */
     height: auto; /* Mantener la proporción de la imagen */
     box-sizing: border-box;
     border-radius: 8px; /* Bordes redondeados */
