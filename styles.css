@@ -1,28 +1,90 @@
 /* Contenedor para el óvalo y el header */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Averia+Serif+Libre:wght@400&display=swap');
 
-.ovalo-con-header {
-    display: flex;
-    flex-direction: column; /* Para apilar el header y el óvalo */
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: beige;
-    z-index: 10; /* Asegura que se quede arriba */
-    text-align: center; /* Centra los elementos dentro del contenedor */
-    padding: 10px 0; /* Espacio arriba y abajo del header */
+@font-face{
+    font-family: 'Royal Wedding';
+    src: url('royal_wedding/RoyalWedding-Regular.ttf') format('truetype');
+}
+
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilo para las pantallas grandes (computadora) */
 html, body {
     margin: 0;
-    background-color: beige;
+    background-color: rgb(241, 241, 224);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; /* Centra el contenido verticalmente */
     overflow-x: hidden; /* Evita el desplazamiento lateral */
     width: 100%;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y los bordes no afecten el tamaño total */
+}
+
+/* Asegurarse de que la vista se ajuste correctamente en dispositivos móviles */
+@media (max-width: 600px) {
+    html, body {
+        padding: 0 10px !important; /* Reducir el padding para móviles */
+        overflow-x: hidden !important;
+    }
+
+    .cuadro-blanco {
+        width: 100% !important; /* Asegura que el cuadro ocupe el 100% del ancho en móviles */
+        margin-bottom: 20px !important;
+    }
+
+    .nombre span {
+        font-size: 26vw !important; /* Tamaño de fuente más grande en móviles */
+    }
+
+    .versiculo {
+        font-family: 'Averia Serif Libre', serif !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        margin-top: 15px !important;
+        color: #444413 !important;
+    }
+
+    .countdown-container {
+        font-size: 14px !important; /* Hacemos el texto del contador más pequeño */
+    }
+
+    .countdown-item {
+        font-size: 10px !important; /* Aseguramos que los items tengan un tamaño pequeño */
+    }
+
+    .countdown-box {
+        font-size: 15px !important; /* Reducimos el tamaño del texto dentro de los cuadros */
+        width: 50px !important; /* Hacemos los cuadros más pequeños */
+        height: 50px !important;
+    }
+
+    .label {
+        font-size: 12px !important; /* Reducimos el tamaño de la etiqueta del contador */
+    }
+
+    .play {
+        width: 100px !important; /* Ajustamos el tamaño del botón */
+        height: 100px !important;
+    }
+}
+
+/* Contenedor para cada parte (cuadro blanco) */
+.cuadro-blanco {
+    background-color: white;
+    width: 90%; /* Ajusta el tamaño del cuadro */
+    max-width: 1000px; /* Tamaño máximo */
+    margin-bottom: 30px; /* Espacio entre las secciones */
+    padding: 20px; /* Espacio dentro del cuadro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-sizing: border-box;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
 /* Contenido (texto e imagen) */
@@ -35,69 +97,12 @@ html, body {
     padding: 20px; /* Agregar espacio alrededor */
 }
 
-/* Ovalo con texto */
-.ovalo-con-texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row; /* Horizontal por defecto en computadoras */
-    width: 350px; /* Ancho del óvalo cuando está acostado */
-    height: 100px; /* Alto del óvalo cuando está acostado */
-    background-color: transparent; /* Fondo transparente */
-    border: 4px solid #5a5a54; /* Borde exterior */
-    border-radius: 100px; /* Forma redondeada */
-    position: relative; /* Mantener el óvalo fijo */
-    margin: 0 auto; /* Centrado horizontal */
-}
-
-/* Borde interno del óvalo */
-.ovalo-con-texto::after {
-    content: '';
-    position: absolute;
-    top: 10px; /* Separación del borde externo */
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border: 2px solid #666661; /* Borde interno */
-    border-radius: 90px; /* Debe coincidir con el borde externo menos el margen */
-}
-
-.ovalo-con-texto span {
-    font-size: 45px; /* Tamaño de las letras */
-    font-weight: bold;
-    color: #85847b; /* Color verde para las letras */
-    line-height: 1; /* Espaciado entre las letras */
-}
-
-/* Estilo para las pantallas grandes (computadora) */
-.nombre-completo {
-    display: inline-block; /* Mostrar los nombres completos */
-}
-
-.inicial {
-    display: none; /* Ocultar las iniciales en pantallas grandes */
-}
-
-/* Media Query para pantallas pequeñas (celulares) */
-@media (max-width: 600px) {
-    .ovalo-con-texto {
-        flex-direction: column; /* Cambiar a vertical en celulares */
-        width: 100px; /* Cambiar ancho */
-        height: 200px; /* Cambiar altura */
-    }
-
-    .ovalo-con-texto span {
-        font-size: 40px; /* Ajustar tamaño de las letras */
-    }
-
-    /* Mostrar solo las iniciales apiladas */
-    .nombre-completo {
-        display: none; /* Ocultar los nombres completos */
-    }
-
-    .inicial {
-        display: block; /* Mostrar las iniciales */
-    }
+.versiculo {
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 15px;
+    color: #444413;
 }
 
 /* Imagen */
@@ -109,12 +114,16 @@ img {
     border-radius: 8px; /* Bordes redondeados */
 }
 
-.nombre span{
+.nombre span {
     font-family: 'Dancing Script', script;
-    font-size: 12vw;
+    font-size: 20vw;
     color: #9b7f24;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-weight: normal;
 }
 
+/* Fecha y estilo del reloj */
 .fecha {
     display: flex;
     flex-direction: column; /* Elementos en columna */
@@ -122,7 +131,7 @@ img {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 /* Fila con el formato "Sábado | 29 | 7:00 PM" */
@@ -157,11 +166,29 @@ img {
     font-weight: normal;
 }
 
+.fecha h2 {
+    margin: 0;
+    color: #444413;
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: normal;
+}
+
+.fecha a {
+    margin: 0;
+    color: #555520;
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 90%;
+    text-decoration: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* Contador de cuenta regresiva */
 .countdown-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Averia Serif Libre', serif;
     text-align: center;
     margin-top: 30px;
 }
@@ -190,4 +217,29 @@ img {
     font-size: 18px;
     margin-top: 5px;
     color: #9b7f24;
+}
+
+/* Botón de Play */
+.play {
+    width: 130px;
+    height: 130px;
+    background-color: #9b7f24; /* Color dorado */
+    border-radius: 50%; /* Hace que sea un círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 30px solid #e6e2e2; /* Color del triángulo (blanco) */
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    position: relative;
+    left: 2px; /* Ajusta para centrar mejor */
 }
