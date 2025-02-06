@@ -105,65 +105,231 @@ html, body {
     color: #444413;
 }
 
-/* Contenedor de la parte 1 con la imagen */
-.parte1-container {
-    position: relative; /* Permite posicionar la imagen dentro del cuadro */
-}
+@media (max-width: 600px){
+    /* Contenedor de la parte 1 con la imagen */
+    .parte1-container {
+        position: relative; /* Permite posicionar la imagen dentro del cuadro */
+    }
 
 /* Imagen de flores en la parte 1 (lado derecho, rotada 90°) */
-.flores-parte1 {
-    position: absolute;
-    top: 0%;  /* Ajusta la posición vertical */
-    right: 60%; /* Mueve la imagen fuera del borde derecho */
-    transform: rotate(195deg); /* Rota la imagen 90° */
-    width: 150px; /* Ajusta el tamaño */
-    height: auto;
-    opacity: 0.8; /* Ligera transparencia */
-    z-index: 1;
+    .flores-parte1 {
+        position: absolute;
+        top: 0%;  /* Ajusta la posición vertical */
+        right: 60%; /* Mueve la imagen fuera del borde derecho */
+        transform: rotate(195deg); /* Rota la imagen 90° */
+        width: 150px; /* Ajusta el tamaño */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte1-5 {
+        position: absolute;
+        top: 85%;  /* Ajusta la posición vertical */
+        right: -5%; /* Mueve la imagen fuera del borde derecho */
+        width: 150px; /* Ajusta el tamaño */
+        transform: rotate(20deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte3 {
+        position: absolute;
+        top: -10%;  /* Ajusta la posición vertical */
+        right: 65%; /* Mueve la imagen fuera del borde derecho */
+        width: 150px; /* Ajusta el tamaño */
+        transform: rotate(0deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte4 {
+        position: absolute;
+        top: -32%;  /* Ajusta la posición vertical */
+        right: 10%; /* Mueve la imagen fuera del borde derecho */
+        width: auto; /* Ajusta el tamaño */
+        transform: rotate(90deg); /* Rota la imagen 90° */
+        height: 250px;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte4-derecha {
+        display: none;
+    }
+
+    .flores-versiculo {
+        position: absolute;
+        top: 50%;  /* Ajusta la posición vertical */
+        right: -10%; /* Mueve la imagen fuera del borde derecho */
+        transform: rotate(30deg); /* Rota la imagen 90° */
+        width: 150px; /* Ajusta el tamaño */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+    .formal {
+        width: 50%;
+        height: auto;
+    }
+
+    .flores-parte5 {
+        position: absolute;
+        top: -5%;  /* Ajusta la posición vertical */
+        right: 0%; /* Mueve la imagen fuera del borde derecho */
+        width: 150px; /* Ajusta el tamaño */
+        transform: rotate(-70deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte5-5 {
+        position: absolute;
+        top: 75%;  /* Ajusta la posición vertical */
+        right: 70%; /* Mueve la imagen fuera del borde derecho */
+        width: 150px; /* Ajusta el tamaño */
+        transform: rotate(-30deg) scaleX(-1); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte6 {
+        position: absolute;
+        top: -20%;  /* Ajusta la posición vertical */
+        right: -10%; /* Mueve la imagen fuera del borde derecho */
+        transform: rotate(80deg); /* Rota la imagen 90° */
+        width: 150px; /* Ajusta el tamaño */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte7 {
+        position: absolute;
+        top: 75%;  /* Ajusta la posición vertical */
+        right: 70%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(-30deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte7-5 {
+        position: absolute;
+        top: 35%;  /* Ajusta la posición vertical */
+        left: 70%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(30deg) scaleX(-1); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte8 {
+        position: absolute;
+        top: 60%;  /* Ajusta la posición vertical */
+        right: 70%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(-130deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte8-5 {
+        position: absolute;
+        top: 60%;  /* Ajusta la posición vertical */
+        left: 70%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(130deg) scaleX(-1); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
 }
 
-.flores-parte1-5 {
-    position: absolute;
-    top: 85%;  /* Ajusta la posición vertical */
-    right: -5%; /* Mueve la imagen fuera del borde derecho */
-    width: 150px; /* Ajusta el tamaño */
-    transform: rotate(20deg); /* Rota la imagen 90° */
-    height: auto;
-    opacity: 0.8; /* Ligera transparencia */
-    z-index: 1;
-}
+@media (min-width: 601px) {
+    /* Contenedor de la parte 1 con la imagen */
+    .parte1-container {
+        position: relative; /* Permite posicionar la imagen dentro del cuadro */
+    }
 
-.flores-parte3 {
-    position: absolute;
-    top: -10%;  /* Ajusta la posición vertical */
-    right: 65%; /* Mueve la imagen fuera del borde derecho */
-    width: 150px; /* Ajusta el tamaño */
-    transform: rotate(0deg); /* Rota la imagen 90° */
-    height: auto;
-    opacity: 0.8; /* Ligera transparencia */
-    z-index: 1;
-}
+    /* Imagen de flores en la parte 1 (derecha) */
+    .flores-parte1 {
+        position: absolute;
+        top: 0;  /* Ajusta la posición vertical */
+        right: 84%; /* Mueve la imagen fuera del borde derecho */
+        transform: rotate(195deg); /* Pequeña rotación */
+        width: 200px; /* Ajusta el tamaño */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
 
-.flores-parte4 {
-    position: absolute;
-    top: -34%;  /* Ajusta la posición vertical */
-    right: 3%; /* Mueve la imagen fuera del borde derecho */
-    width: auto; /* Ajusta el tamaño */
-    transform: rotate(90deg); /* Rota la imagen 90° */
-    height: 300px;
-    opacity: 0.8; /* Ligera transparencia */
-    z-index: 1;
-}
+    .flores-parte1-5 {
+        position: absolute;
+        top: 82%;  /* Ajusta la posición vertical */
+        left: 73%; /* Mueve la imagen fuera del borde izquierdo */
+        transform: rotate(10deg); /* Rota la imagen */
+        width: 300px; /* Ajusta el tamaño */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
 
-.flores-versiculo{
-    position: absolute;
-    top: 50%;  /* Ajusta la posición vertical */
-    right: -10%; /* Mueve la imagen fuera del borde derecho */
-    transform: rotate(30deg); /* Rota la imagen 90° */
-    width: 150px; /* Ajusta el tamaño */
-    height: auto;
-    opacity: 0.8; /* Ligera transparencia */
-    z-index: 1;
+    .flores-parte3 {
+        position: absolute;
+        top: -15%;  /* Ajusta la posición vertical */
+        left: -5%; /* Mueve la imagen fuera del borde izquierdo */
+        transform: rotate(0deg); /* Rota la imagen */
+        width: 200px; /* Ajusta el tamaño */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte4 {
+        position: absolute;
+        top: -25%;  /* Ajusta la posición vertical */
+        right: 59%; /* Mueve la imagen fuera del borde derecho */
+        transform: rotate(90deg); /* Rota la imagen */
+        width: auto; /* Ajusta el tamaño */
+        height: 450px;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte4-derecha {
+        position: absolute;
+        top: -25%;  /* Ajusta la posición vertical */
+        left: 59%; /* Coloca la imagen en el lado derecho */
+        transform: rotate(-90deg) scaleX(-1);
+        width: auto;
+        height: 450px;
+        opacity: 0.8;
+        z-index: 1;
+    }
+    
+    .flores-versiculo {
+        position: absolute;
+        top: 30%;  /* Ajusta la posición vertical */
+        left: 87%; /* Mueve la imagen fuera del borde izquierdo */
+        transform: rotate(0deg); /* Rota la imagen */
+        width: 180px; /* Ajusta el tamaño */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .formal{
+        width: 20%;
+        height: auto;
+    }
 }
 
 
@@ -192,7 +358,6 @@ img {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    margin-top: 35px;
 }
 
 /* Fila con el formato "Sábado | 29 | 7:00 PM" */
@@ -227,7 +392,7 @@ img {
     font-weight: normal;
 }
 
-.fecha h2 {
+.fecha h2, h1{
     margin: 0;
     color: #444413;
     font-family: 'Averia Serif Libre', serif;
@@ -303,4 +468,92 @@ img {
     border-bottom: 22px solid transparent;
     position: relative;
     left: 2px; /* Ajusta para centrar mejor */
+}
+
+/* itinerario */
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 0;
+    max-width: 600px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #9b7f24; /* Línea dorada */
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.timeline-item:nth-child(odd) {
+    left: -16.5%;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 51%;
+    text-align: left;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 4px solid #9b7f24;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-item:nth-child(even)::before {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.time {
+    font-weight: bold;
+    color: #9b7f24;
+    font-size: 18px;
+}
+
+.event {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* boton mesa de regalos */
+
+button {
+    background-color: #9b7f24;
+    color: white;
+    font-family: 'Averia Serif Libre', serif;
+    padding: 12px 24px; /* Espaciado interno */
+    border: none;
+    border-radius: 30px; /* Hace que sea ovalado */
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #695716;
 }
