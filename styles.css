@@ -15,7 +15,7 @@
 /* Estilo para las pantallas grandes (computadora) */
 html, body {
     margin: 0;
-    background-color: rgb(241, 241, 224);
+    background-color: #E3DCD4;
     display: flex;
     justify-content: center;
     flex-direction: column;
