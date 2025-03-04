@@ -114,8 +114,8 @@ html, body {
 /* Imagen de flores en la parte 1 (lado derecho, rotada 90°) */
     .flores-parte1 {
         position: absolute;
-        top: 0%;  /* Ajusta la posición vertical */
-        right: 60%; /* Mueve la imagen fuera del borde derecho */
+        top: -2%;  /* Ajusta la posición vertical */
+        right: 66%; /* Mueve la imagen fuera del borde derecho */
         transform: rotate(195deg); /* Rota la imagen 90° */
         width: 150px; /* Ajusta el tamaño */
         height: auto;
@@ -125,7 +125,7 @@ html, body {
 
     .flores-parte1-5 {
         position: absolute;
-        top: 85%;  /* Ajusta la posición vertical */
+        top: 89%;  /* Ajusta la posición vertical */
         right: -5%; /* Mueve la imagen fuera del borde derecho */
         width: 150px; /* Ajusta el tamaño */
         transform: rotate(20deg); /* Rota la imagen 90° */
@@ -178,9 +178,9 @@ html, body {
     .flores-parte5 {
         position: absolute;
         top: -5%;  /* Ajusta la posición vertical */
-        right: 0%; /* Mueve la imagen fuera del borde derecho */
+        right: -3%; /* Mueve la imagen fuera del borde derecho */
         width: 150px; /* Ajusta el tamaño */
-        transform: rotate(-70deg); /* Rota la imagen 90° */
+        transform: rotate(-60deg); /* Rota la imagen 90° */
         height: auto;
         opacity: 0.8; /* Ligera transparencia */
         z-index: 1;
@@ -273,9 +273,9 @@ html, body {
 
     .flores-parte1-5 {
         position: absolute;
-        top: 82%;  /* Ajusta la posición vertical */
+        top: 89%;  /* Ajusta la posición vertical */
         left: 73%; /* Mueve la imagen fuera del borde izquierdo */
-        transform: rotate(10deg); /* Rota la imagen */
+        transform: rotate(20deg); /* Rota la imagen */
         width: 300px; /* Ajusta el tamaño */
         height: auto;
         opacity: 0.8; /* Ligera transparencia */
@@ -329,6 +329,81 @@ html, body {
     .formal{
         width: 20%;
         height: auto;
+    }
+    .flores-parte5 {
+        position: absolute;
+        top: -6%;  /* Ajusta la posición vertical */
+        right: -2%; /* Mueve la imagen fuera del borde derecho */
+        width: 250px; /* Ajusta el tamaño */
+        transform: rotate(-80deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte5-5 {
+        position: absolute;
+        top: 68%;  /* Ajusta la posición vertical */
+        right: 88%; /* Mueve la imagen fuera del borde derecho */
+        width: 150px; /* Ajusta el tamaño */
+        transform: rotate(130deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte6 {
+        position: absolute;
+        top: -8%;  /* Ajusta la posición vertical */
+        right: -8%; /* Mueve la imagen fuera del borde derecho */
+        transform: rotate(80deg); /* Rota la imagen 90° */
+        width: 300px; /* Ajusta el tamaño */
+        height: auto;
+        z-index: 1;
+    }
+
+    .flores-parte7 {
+        position: absolute;
+        top: 65%;  /* Ajusta la posición vertical */
+        right: 74%; /* Mueve la imagen fuera del borde derecho */
+        width: 350px; /* Ajusta el tamaño */
+        transform: rotate(-30deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte7-5 {
+        position: absolute;
+        top: 25%;  /* Ajusta la posición vertical */
+        left: 74%; /* Mueve la imagen fuera del borde derecho */
+        width: 350px; /* Ajusta el tamaño */
+        transform: rotate(30deg) scaleX(-1); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte8 {
+        position: absolute;
+        top: 50%;  /* Ajusta la posición vertical */
+        right: 88%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(-130deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte8-5 {
+        position: absolute;
+        top: 50%;  /* Ajusta la posición vertical */
+        left: 88%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(130deg) scaleX(-1); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
     }
 }
 
