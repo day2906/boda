@@ -3,12 +3,17 @@ function getTicketCountFromURL() {
     return parseInt(urlParams.get('tickets')) || 0;
 }
 
+function getTicketCountFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return parseInt(urlParams.get('tickets')) || 0;
+}
+
 function createCircles(ticketCount) {
     const container = document.getElementById("circles-container");
     container.innerHTML = ""; 
 
-    // Genera círculos según la cantidad de boletos
-    for (let i = 1; i <= ticketCount; i++) {
+    // Siempre crear 5 círculos
+    for (let i = 1; i <= 5; i++) {
         let circleWrapper = document.createElement("div");
         circleWrapper.style.textAlign = "center";
         
@@ -19,7 +24,12 @@ function createCircles(ticketCount) {
         number.classList.add("number");
         number.textContent = i;
         
-        // Agregar el evento para seleccionar el círculo
+        // Si el número de boletos es mayor o igual al índice del círculo, se selecciona el círculo
+        if (i <= ticketCount) {
+            circle.classList.add("selected");
+        }
+
+        // Agregar el evento para seleccionar el círculo si es necesario
         circle.addEventListener("click", function() {
             circle.classList.toggle("selected");
         });
@@ -29,6 +39,12 @@ function createCircles(ticketCount) {
         container.appendChild(circleWrapper);
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const ticketCount = getTicketCountFromURL();
+    createCircles(ticketCount);
+});
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
