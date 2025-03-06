@@ -251,6 +251,28 @@ html, body {
         opacity: 0.8; /* Ligera transparencia */
         z-index: 1;
     }
+
+    .flores-parte9 {
+        position: absolute;
+        top: 60%;  /* Ajusta la posición vertical */
+        right: 70%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(-130deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte9-5 {
+        position: absolute;
+        top: 60%;  /* Ajusta la posición vertical */
+        left: 70%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(130deg) scaleX(-1); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
 }
 
 @media (min-width: 601px) {
@@ -396,6 +418,28 @@ html, body {
     }
 
     .flores-parte8-5 {
+        position: absolute;
+        top: 50%;  /* Ajusta la posición vertical */
+        left: 88%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(130deg) scaleX(-1); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte9 {
+        position: absolute;
+        top: 50%;  /* Ajusta la posición vertical */
+        right: 88%; /* Mueve la imagen fuera del borde derecho */
+        width: 200px; /* Ajusta el tamaño */
+        transform: rotate(-130deg); /* Rota la imagen 90° */
+        height: auto;
+        opacity: 0.8; /* Ligera transparencia */
+        z-index: 1;
+    }
+
+    .flores-parte9-5 {
         position: absolute;
         top: 50%;  /* Ajusta la posición vertical */
         left: 88%; /* Mueve la imagen fuera del borde derecho */
@@ -702,4 +746,35 @@ button {
 
 button:hover {
     background-color: #695716;
+}
+
+/* boletos*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+}
+.selected {
+    background-color: #695716;
+}
+.number {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Averia Serif Libre', serif;
 }
