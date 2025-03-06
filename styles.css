@@ -754,27 +754,18 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     margin-top: 50px;
 }
-.circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid #9b7f24;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: white;
-}
-.selected {
-    background-color: #9b7f24;  /* Color cuando esté seleccionado */
-}
+
 .number {
-    text-align: center;
-    margin-top: 5px;
-    font-size: 16px;
+    font-size: 100px; /* Tamaño grande del número */
+    font-weight: bold;
     font-family: 'Averia Serif Libre', serif;
+    color: #9b7f24;  /* Color normal del número */
 }
+
+.highlighted {
+    color: #695716;  /* Color cuando esté resaltado */
+}
+
