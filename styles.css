@@ -254,9 +254,9 @@ html, body {
 
     .flores-parte9 {
         position: absolute;
-        top: 60%;  /* Ajusta la posición vertical */
-        right: 70%; /* Mueve la imagen fuera del borde derecho */
-        width: 200px; /* Ajusta el tamaño */
+        top: 70%;  /* Ajusta la posición vertical */
+        right: 80%; /* Mueve la imagen fuera del borde derecho */
+        width: 150px; /* Ajusta el tamaño */
         transform: rotate(-130deg); /* Rota la imagen 90° */
         height: auto;
         opacity: 0.8; /* Ligera transparencia */
@@ -265,9 +265,9 @@ html, body {
 
     .flores-parte9-5 {
         position: absolute;
-        top: 60%;  /* Ajusta la posición vertical */
-        left: 70%; /* Mueve la imagen fuera del borde derecho */
-        width: 200px; /* Ajusta el tamaño */
+        top: 70%;  /* Ajusta la posición vertical */
+        left: 80%; /* Mueve la imagen fuera del borde derecho */
+        width: 150px; /* Ajusta el tamaño */
         transform: rotate(130deg) scaleX(-1); /* Rota la imagen 90° */
         height: auto;
         opacity: 0.8; /* Ligera transparencia */
@@ -660,7 +660,7 @@ img {
     color: #555520;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .timeline {
         width: 90%;
     }
@@ -761,7 +761,7 @@ button:hover {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid #9b7f24;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -770,7 +770,7 @@ button:hover {
     background-color: white;
 }
 .selected {
-    background-color: #E3DCD4;  /* Color cuando esté seleccionado */
+    background-color: #9b7f24;  /* Color cuando esté seleccionado */
 }
 .number {
     text-align: center;
