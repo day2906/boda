@@ -770,7 +770,7 @@ button:hover {
     background-color: white;
 }
 .selected {
-    background-color: #695716;
+    background-color: #695716;  /* Color cuando esté seleccionado */
 }
 .number {
     text-align: center;
