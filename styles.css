@@ -254,7 +254,7 @@ html, body {
 
     .flores-parte9 {
         position: absolute;
-        top: 70%;  /* Ajusta la posición vertical */
+        top: 75%;  /* Ajusta la posición vertical */
         right: 80%; /* Mueve la imagen fuera del borde derecho */
         width: 150px; /* Ajusta el tamaño */
         transform: rotate(-130deg); /* Rota la imagen 90° */
@@ -265,7 +265,7 @@ html, body {
 
     .flores-parte9-5 {
         position: absolute;
-        top: 70%;  /* Ajusta la posición vertical */
+        top: 75%;  /* Ajusta la posición vertical */
         left: 80%; /* Mueve la imagen fuera del borde derecho */
         width: 150px; /* Ajusta el tamaño */
         transform: rotate(130deg) scaleX(-1); /* Rota la imagen 90° */
