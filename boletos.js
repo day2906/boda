@@ -3,11 +3,6 @@ function getTicketCountFromURL() {
     return parseInt(urlParams.get('tickets')) || 0;
 }
 
-function getTicketCountFromURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return parseInt(urlParams.get('tickets')) || 0;
-}
-
 function createCircles(ticketCount) {
     const container = document.getElementById("circles-container");
     container.innerHTML = ""; 
@@ -29,23 +24,11 @@ function createCircles(ticketCount) {
             circle.classList.add("selected");
         }
 
-        // Agregar el evento para seleccionar el círculo si es necesario
-        circle.addEventListener("click", function() {
-            circle.classList.toggle("selected");
-        });
-
         circleWrapper.appendChild(circle);
         circleWrapper.appendChild(number);
         container.appendChild(circleWrapper);
     }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    const ticketCount = getTicketCountFromURL();
-    createCircles(ticketCount);
-});
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const ticketCount = getTicketCountFromURL();
