@@ -1,5 +1,5 @@
     function actualizarContador() {
-        const fechaBoda = new Date('November 29, 2025 19:00:00').getTime();
+        const fechaBoda = new Date('November 29, 2025 14:00:00').getTime();
 
         function calcularTiempo() {
             const ahora = new Date().getTime();
